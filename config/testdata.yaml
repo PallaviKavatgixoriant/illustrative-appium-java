@@ -1,0 +1,47 @@
+# Test data that is not written as a sentence in the feature files.
+# PLACEHOLDER_* values are unknown. Other values are copied from Test_Case.xlsx.
+
+# TAT-62 says to enter the correct username and password. The form also shows the correct email.
+# These three values are the samples written on the Part 1 screen.
+valid.username: MagicBird123
+valid.email: name.surname@gmail.com
+valid.password: Password123!
+
+# TAT-63 says incorrect username, incorrect password, and incorrect email.
+# The sheet does not give those three strings. The app rejects a username that is not 4 or more letters or digits.
+invalid.username: ab
+invalid.email: not-an-email
+invalid.password: bad
+
+# TAT-64 says the list is alphabetical. It does not say case-sensitive or which alphabet.
+# Later, set this to case-sensitive or case-insensitive after checking the app.
+sort.rule: case-insensitive
+
+# TAT-66 letters that must contain no manufacturers.
+android.empty.categories: E,G,Q,U,W,X,Y,Z
+ios.empty.categories: E,Q,U,W,X,Y
+
+# TAT-67 letters that must contain 3 or more manufacturers.
+android.categories.with.three.or.more: A,B,C,D,F,H,L,M,R,S
+ios.categories.with.three.or.more: A,B,C,L,M,P,R,S
+
+# TAT-68 and TAT-69 do not describe the currency symbol or decimal mark.
+# Later, set this to digits-and-dot only if the app uses that format.
+price.parse.rule: digits-and-dot
+
+# TAT-69 brand names that the iOS build may show.
+ios.brand.pool: nike,puma,adidas
+
+# TAT-70. The sentence can mean "every image name is in the pool"
+# or "at least one image name is in the pool". Pick one after the wording is confirmed.
+# Later values: every-name-in-pool or at-least-one-name-in-pool.
+image.match.rule: PLACEHOLDER_IMAGE_MATCH_RULE
+ios.fakeimage.pool: FAKEIMAGE-car,FAKEIMAGE-macbook,FAKEIMAGE-phone,FAKEIMAGE-watch,FAKEIMAGE-person,FAKEIMAGE-cactus,FAKEIMAGE-book
+android.fakeimage.pool: PLACEHOLDER_ANDROID_FAKEIMAGE_POOL
+
+# TAT-72 says "preceding or following" and does not choose one.
+# Later values: preceding or following.
+section2.relative.axis: following
+
+# TAT-73. The label under the checkbox is given by the test case.
+section3.yes.label: yes

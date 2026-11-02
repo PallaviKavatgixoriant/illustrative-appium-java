@@ -1,0 +1,28 @@
+# Environment settings live here, outside the test code.
+# Every value below is a placeholder. Replace the whole value before a real run.
+# Do not put these values inside step definitions or page objects.
+
+# Address printed by your own Appium server when it starts.
+appium.server.url:  http://10.226.59.221:4723
+
+# How long an explicit wait may look for an element. Use a whole number of seconds.
+# The tests do not call Thread.sleep.
+explicit.wait.seconds: 10
+
+# Android app file shipped with this project. The path is relative to the project folder.
+# Package and activity names are not in Test_Case.xlsx.
+android.app.path: apk/AppForTestAutomation.apk
+android.app.package: com.example.appfortestautomation
+android.app.activity: com.example.appfortestautomation.MainActivity
+android.device.name: Pallavi
+android.udid: 64291VDCR000DV
+android.platform.version: 17
+
+# iOS. This workspace has no iOS app file. A Mac is required to run XCUITest.
+ios.app.path: PLACEHOLDER_IOS_APP_PATH
+ios.bundle.id: PLACEHOLDER_IOS_BUNDLE_ID
+ios.device.name: PLACEHOLDER_IOS_DEVICE_NAME
+ios.udid: PLACEHOLDER_IOS_UDID
+ios.platform.version: PLACEHOLDER_IOS_PLATFORM_VERSION
+ios.xcode.org.id: PLACEHOLDER_IOS_XCODE_ORG_ID
+ios.xcode.signing.id: PLACEHOLDER_IOS_XCODE_SIGNING_ID
